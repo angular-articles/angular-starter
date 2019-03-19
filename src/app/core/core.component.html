@@ -1,0 +1,9 @@
+<h1>Example Module</h1>
+<button class="btn" type="button" (click)="onClick()" [@openClose]="buttonIsOpen ? 'open' : 'close'">{{buttonIsOpen ?
+	'Close' : 'Open'}}
+</button>
+<div *ngFor="let user of users">
+	{{user.id}}<br>
+	{{user.email}}<br>
+	{{user.password}}
+</div>
