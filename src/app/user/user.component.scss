@@ -1,0 +1,23 @@
+.user-page {
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	&__aside {
+		flex-basis: 25%;
+		padding: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		background-color: var(--color-black);
+		border-radius: 4px;
+	}
+
+	&__body {
+		flex-basis: 75%;
+		padding: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		background-color: var(--color-black);
+		border-radius: 4px;
+	}
+}
