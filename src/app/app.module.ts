@@ -11,6 +11,7 @@ import {environment} from '../environments/environment';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {NotFountComponent} from './not-fount/not-fount.component';
+import {WINDOW_PROVIDERS} from './shared/services/window.service';
 
 @NgModule({
 	declarations: [
@@ -25,7 +26,9 @@ import {NotFountComponent} from './not-fount/not-fount.component';
 		environment.production ?
 			[] : HttpClientInMemoryWebApiModule.forFeature(InMemoryUsersService, {delay: 2000})
 	],
-	providers: [],
+	providers: [
+		WINDOW_PROVIDERS
+	],
 	bootstrap: [
 		AppComponent
 	]
