@@ -23,7 +23,7 @@ import {NotFountComponent} from './not-fount/not-fount.component';
 		BrowserAnimationsModule,
 		HttpClientModule,
 		environment.production ?
-			[] : HttpClientInMemoryWebApiModule.forFeature(InMemoryUsersService, {delay: 500})
+			[] : HttpClientInMemoryWebApiModule.forFeature(InMemoryUsersService, {delay: 2000})
 	],
 	providers: [],
 	bootstrap: [

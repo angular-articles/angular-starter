@@ -1,0 +1,10 @@
+@import "../var";
+
+.template {
+	display: grid;
+	grid-template-areas: "aside header" "aside body";
+	grid-template-columns: $template__aside-width 1fr;
+	grid-template-rows: $template__header-height 1fr;
+	height: 100vh;
+	overflow: hidden;
+}

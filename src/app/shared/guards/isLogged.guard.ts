@@ -20,7 +20,7 @@ export class IsLoggedGuard implements CanActivate, CanLoad {
 	}
 
 	private check() {
-		if (this.userService.getUser().canAccessApp) {
+		if (this.userService.getUser.canAccessApp) {
 			return true;
 		}
 

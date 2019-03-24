@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	color: #747d8a;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+}
+
+@import "~src/scss/root";

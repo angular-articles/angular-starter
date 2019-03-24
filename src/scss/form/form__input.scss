@@ -1,0 +1,31 @@
+.form__input {
+	background-color: rgba(0, 0, 0, 0);
+	background-image: linear-gradient(#009efb, #009efb), linear-gradient(rgba(120, 130, 140, 0.13), rgba(120, 130, 140, 0.13));
+	background-position: center bottom, center calc(100% - 1px);
+	background-repeat: no-repeat;
+	background-size: 0 2px, 100% 1px;
+	border: none;
+	color: #6c757d;
+	display: block;
+	font-size: 1rem;
+	margin-bottom: 25px;
+	min-height: 38px;
+	padding: 0;
+	width: 100%;
+
+	&:focus {
+		background-size: 100% 2px, 100% 1px;
+		outline: 0 none;
+		transition-duration: 0.3s;
+	}
+
+	&.ng-dirty.ng-invalid {
+		background-image: linear-gradient(#fb0044, #fb0044), linear-gradient(rgba(140, 0, 35, 0.43), rgba(140, 0, 35, 0.43));
+		color: #fb0044;
+	}
+
+	&.ng-dirty.ng-valid {
+		color: #009efb;
+		background-image: linear-gradient(#009efb, #009efb), linear-gradient(rgba(0, 158, 251, 0.13), rgba(0, 158, 251, 0.13));
+	}
+}

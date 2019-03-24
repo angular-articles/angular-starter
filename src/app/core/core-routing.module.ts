@@ -5,7 +5,11 @@ import {CoreComponent} from './core.component';
 import {CoreResolve} from './core.resolve';
 
 const routes: Routes = [
-	{path: '', component: CoreComponent, resolve: {users: CoreResolve}}
+	{
+		path: '', component: CoreComponent, resolve: {user: CoreResolve}, children: [
+			{path: 'user', loadChildren: '../user/user.module#UserModule'}
+		]
+	}
 ];
 
 @NgModule({

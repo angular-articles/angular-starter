@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {HttpClient, HttpParams} from '@angular/common/http';
 import {Observable} from 'rxjs';
 
 import {User} from '../shared/models/user';
@@ -14,5 +14,9 @@ export class CoreService {
 
 	getUsers(): Observable<User[]> {
 		return this.http.get<User[]>('/app/users');
+	}
+
+	getUser(email: string): Observable<User> {
+		return this.http.get<User>(`/app/users/?email=${encodeURIComponent(email)}`);
 	}
 }

@@ -1,0 +1,8 @@
+@import "../var";
+
+.template__body {
+	grid-area: body;
+	overflow: auto;
+	padding-left: $template__p-l;
+	padding-right: $template__p-r;
+}

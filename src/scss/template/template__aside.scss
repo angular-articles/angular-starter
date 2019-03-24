@@ -1,0 +1,9 @@
+@import "../var";
+
+.template__aside {
+	background-color: var(--color-black);
+	grid-area: aside;
+	overflow: auto;
+	padding-left: $template__p-l;
+	padding-right: $template__p-r;
+}

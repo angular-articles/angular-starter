@@ -13,7 +13,7 @@ export class UserService {
 		this.user = new User(JSON.parse(localStorage.getItem('user')) || undefined);
 	}
 
-	getUser(): User {
+	get getUser(): User {
 		return this.user;
 	}
 

@@ -1,0 +1,8 @@
+@import "../var";
+
+.template__header {
+	background-color: var(--color-blue);
+	grid-area: header;
+	padding-left: $template__p-l;
+	padding-right: $template__p-r;
+}

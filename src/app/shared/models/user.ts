@@ -1,18 +1,21 @@
 export class User {
-	name: string;
 	bearerToken: string;
-	isAuthenticated: boolean;
 	canAccessApp: boolean;
+	email: string;
+	id: number | undefined;
+	isAuthenticated: boolean;
+	name: string;
+	password?: string;
 
-	constructor(props: { name: string, bearerToken: string, isAuthenticated: boolean, canAccessApp: boolean } = {
-		name: '',
-		bearerToken: '',
-		isAuthenticated: false,
-		canAccessApp: false
-	}) {
-		this.name = props.name;
+	constructor(props: {
+		bearerToken: string, canAccessApp: boolean, email: string, id: number | undefined,
+		isAuthenticated: boolean, name: string
+	} = {bearerToken: '', canAccessApp: false, email: '', id: undefined, isAuthenticated: false, name: ''}) {
 		this.bearerToken = props.bearerToken;
-		this.isAuthenticated = props.isAuthenticated;
 		this.canAccessApp = props.canAccessApp;
+		this.email = props.email;
+		this.id = props.id;
+		this.isAuthenticated = props.isAuthenticated;
+		this.name = props.name;
 	}
 }
