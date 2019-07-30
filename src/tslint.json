@@ -15,7 +15,8 @@
 		],
 		"indent": [
 			true,
-			"tabs"
+			"spaces",
+			4
 		]
 	}
 }
